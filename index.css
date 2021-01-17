@@ -1,246 +1,138 @@
-  body { 
-      background: #ffff;
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  margin: 0;
-	  font-family: Verdana;
-	  overflow: auto;
-  }
-  
-  ::-moz-selection { /* Code for Firefox */
-  color: red;
-  background: yellow;
-}
-
- ::selection {
-  color: white;
-  background: #000;
-}
-    
-
-  .bgbtn {
-	  position: fixed;
-	  bottom: 16px;
-	  background: #0062FF;
-	  color: white;
-	  padding: 10px 12px;
-	  font-size: 16px;
-	  right: 10px;
-	  border-radius: 15px;
-	  outline: none;
-	  border: 1px solid #fff;
-	  cursor: pointer;
-	  box-shadow: 0 1px 6px 1px #125ED7;
-	  transition: 0.3s ease;
-  }
-  .bgbtn:hover {
-	  border: 2px solid #fff;
-	  transform: translateY(5px);
-	  
-  }
-  
-  .bgbtn:active {
-	  box-shadow: 0 1px 10px 1px #125ED7;
-	  opacity: 0.7;
-	  transform: translateY(5px);
-  }
-  .header {
-	  padding-top: 50px;
-	  float: center;
-	  text-align: center;
-	  overflow: hidden;
-	  width: 100%;
-	  color: black;
-  }
-  .img1 {
-	  vertical-align: middle;
-	  pointer-events: none;
-	  
-  }
-  
-  .account {
-	  padding: 10px 20px;
-  }
+<html>
+ <head>
+  <title> Blue Circle</title>
+  <link rel="icon" href="logo2.png" size="16x16">
+  <link rel="stylesheet" href="index.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ </head>
  
- a {
-	  color: #038BFF;
-	  float: right;
-	  text-decoration: none;
-	  padding-top: 5px;
-	  padding-right: 35px;
-	  vertical-align: middle;
-  } 
-  a:hover {
-	  color: #2D5CA6;
-	  opacity: 0.8;
-  }
-  
-  .img4 {
-	  border-radius: 50%;
-	  float: right;
-	  vertical-align: middle;
-	  
-	  cursor: pointer;
-	  transition: 0.3s ease;
-  }
-  
-  .img4:hover {
-	  box-shadow: 0px 1px 6px 1px #BFBFBF;
-  }
-  
-  .search {
-	  width: 100%;
-	  float: center;
-	  text-align: center;
+ <body>
+ <script>
+document.onkeydown = function(e) {
+        if (e.ctrlKey &&
+            (e.keyCode === 85 )){
+            return false;
+        }
+};
+</script>
+ <script>
+  jQuery(document).ready(function(){
+  jQuery(function() {
+        jQuery(this).bind("contextmenu", function(event) {
+            event.preventDefault();
+            
+        });
+    });
+});
+ </script>
+  <div class="account">
+   <p><img class="img4" title="BC Account: example@chmail.com" src="https://lh3.googleusercontent.com/ogw/ADGmqu_f3IllsZsr0SI66x-x5ZSHginhMPMEhSnkXJJ-=s32-c-mo"></li>
+   <a href="#">Chakra Mail</a></p>
+   <a href="https://youtube.com">YouTube</a></p>
+  </div>
+  <div class="header">
+ 
+  <h1><img class="img1" src="logo2.png">
+    Blue Circle</h1>
 	 
-  }
-  .input1 {
-	  float: center;
-	  font-size: 17px;
-	  padding: 12px 10px 10px 45px;
-	  border: 1px solid #fff;
-	  outline: none;
-	  background-image: url('https://www.w3schools.com/howto/searchicon.png');
-      background-position: 15px 13px; 
-      background-repeat: no-repeat;
-	  border-top-left-radius: 39px;
-	  border-bottom-left-radius: 39px;
-	  box-shadow: 0 3px 5px 1px #BFBFBF;
-	  width: 40%;
-	  height: 50px;
-  }
-  .input1:focus {
-	  box-shadow: 0 3px 9px 1px #91A1BA;
-  }
-  .btn1 {
-	  float: center;
-	  font-size: 17px;
-	  padding: 12px 10px 10px 0px;
-	  border-bottom-right-radius: 39px;
-	  background: #fff;
-	  border-top-right-radius: 39px;
-	  outline: none;
-	  border: 1px solid #fff;
-	  box-shadow: 0 3px 5px 1px #BFBFBF;
-	  width: 5%;
-	  cursor: pointer;
-	  height: 50px;
-	  transition: 0.2s ease;
-	  
-  }
-  .btn1:hover {
-	  opacity: 0.8;
-	  box-shadow: 0 3px 6px 1px #BFBFBF;
-  }
+  </div>
+  <br/>
+  <br/>
+  <div class="search">
+   <form action="#">
+    <input class="input1" title="Search by BC" type="text" name="search" placeholder="Search..." autocomplete="off">
+    <button class="btn1" type="submit"><img class="img3" src="logo2.png" style="vertical-align:middle;pointer-events: none;" width="30%"></button>
+   </form>
+  </div>
   
-  .btn1:active {
-	  box-shadow: 0 3px 9px 1px #91A1BA;
-  }
+  <button class="bgbtn" id="myBtn1" type="button" >Change theme</button>
+  <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   <h2> Default</h2>
+   <img class="bg" src="https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg" onclick="myFunction6()" width="19%" style="border:1px solid #dddd" alt="HD Gradient 1">
+   <h2> HD Background</h2>
+   <img class="bg" src="https://cdn3.f-cdn.com/contestentries/212081/10921447/5549c4f4d2bd5_thumb900.jpg" onclick="myFunction2()" width="19%"  alt="HD Gradient 1">
+   <img class="bg" src="https://cdn5.f-cdn.com/contestentries/212081/10921447/5549c41541982_thumb900.jpg" onclick="myFunction3()" width="19%" alt="HD Image 1">
+   <img class="bg" src="https://cdn5.f-cdn.com/contestentries/212081/10921447/5549c561a45b5_thumb900.jpg" onclick="myFunction4()" width="19%" alt="HD Image 2">
+   <img class="bg" src="https://photopedia.in/wp-content/uploads/2017/12/wide-angle.jpg" onclick="myFunction5()" width="19%" alt="HD Image 3">
+   <img class="bg" src="https://cdn2.f-cdn.com/contestentries/212081/15536108/554919adf290f_thumb900.jpg" onclick="myFunction7()" width="16.5%" alt="HD Image 4">
+   
+   
+  </div>
+
+</div>
+
  
- .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 20px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ </body>
+ <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
 }
 
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
 }
 
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
+</script>
+   <script>
+function myFunction2() {
+  document.body.style.backgroundColor = "#f3f3f3";
+  document.body.style.backgroundImage = "url('https://cdn3.f-cdn.com/contestentries/212081/10921447/5549c4f4d2bd5_thumb900.jpg')";
+}
+</script>
+<script>
+function myFunction3() {
+  document.body.style.backgroundColor = "#f3f3f3";
+  document.body.style.backgroundImage = "url('https://cdn5.f-cdn.com/contestentries/212081/10921447/5549c41541982_thumb900.jpg')";
+}
+</script>
+<script>
+function myFunction4() {
+  document.body.style.backgroundColor = "#f3f3f3";
+  document.body.style.color = "#fffff";
+  document.body.style.backgroundImage = "url('https://cdn5.f-cdn.com/contestentries/212081/10921447/5549c561a45b5_thumb900.jpg')";
+}
+</script>
+<script>
+function myFunction5() {
+  document.body.style.backgroundColor = "#f3f3f3";
+  document.body.style.color = "#fffff";
+  document.body.style.backgroundImage = "url('https://photopedia.in/wp-content/uploads/2017/12/wide-angle.jpg')";
+}
+</script>
+<script>
+function myFunction6() {
+  document.body.style.backgroundColor = "#fffff";
+  document.body.style.color = "#fffff";
+  document.body.style.backgroundImage = "url('https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg')";
+}
+</script>
+<script>
+function myFunction7() {
+  document.body.style.backgroundColor = "#fffff";
+  document.body.style.color = "#fffff";
+  document.body.style.backgroundImage = "url('https://cdn2.f-cdn.com/contestentries/212081/15536108/554919adf290f_thumb900.jpg')";
+}
+</script>
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.bg {
-	cursor: pointer;
-}
-.bg:hover {
-	box-shadow: 0 2px 5px 2px #6D6F70;
-}
-
-  
-  
-  @media only screen and (max-width:800px) {
-  /* For tablets: */
-  .header {
-    width: 100%;
-	padding-top:50px;
-  }
-  .search {
-    width: 100%;
-  }
-  .input1 {
-	  width: 100%;
-	  border-radius: 0%;
-	  position: fixed;
-	  top: 0;
-	  left: 0px;
-  }
-  .btn1 {
-	  border-radius: 0%;
-	  position: fixed;
-	  top: 0;
-	  right: 0px;
-	  width: 10%;
-	  box-shadow: 0 0 0 0 #BFBFBF;
-	  padding: 12px 12px 12px 12px;
-  }
-  
-  .img3 {
-	  width: 100%;
-  }
- .img1 {
-	  vertical-align: middle;
-	  width: 20%;
-  }
-  .account {
-	  padding: 50px 10px;
-	  font-size: 15px;
-  }
-  .bg {
-	cursor: pointer;
-	width: 45%;
-}
-}
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .header, .search {
-    width: 100%;
-	
-  }
-  .img3 {
-	  width: 100%;
-  }
-  .img1 {
-	  vertical-align: middle;
-	  width: 10%;
-  }
-  .bg {
-	cursor: pointer;
-	width: 45%;
-}
-}
+</html>
