@@ -1,13 +1,22 @@
 <html>
  <head>
   <title> Blue Circle</title>
-  <link rel="shortcut icon" href="https://smtechnlogy.github.io/Blue-Circle/logo2.png?" type="image/png" sizes="16x16">
+  <link rel="icon" href="logo2.png" size="16x16">
   <link rel="stylesheet" href="index.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
  </head>
  
  <body>
- 
+ <script>
+document.onkeydown = function(e) {
+        if (e.ctrlKey &&
+            (e.keyCode === 85 )){
+            return false;
+        }
+};
+</script>
  <script>
   jQuery(document).ready(function(){
   jQuery(function() {
@@ -34,7 +43,7 @@
   <div class="search">
    <form action="#">
     <input class="input1" title="Search by BC" type="text" name="search" placeholder="Search..." autocomplete="off">
-    <button class="btn1" type="submit"><img class="img3" src="logo2.png" style="vertical-align:middle;" width="30%"></button>
+    <button class="btn1" type="submit"><img class="img3" src="logo2.png" style="vertical-align:middle;pointer-events: none;" width="30%"></button>
    </form>
   </div>
   
@@ -51,7 +60,7 @@
    <img class="bg" src="https://cdn5.f-cdn.com/contestentries/212081/10921447/5549c41541982_thumb900.jpg" onclick="myFunction3()" width="19%" alt="HD Image 1">
    <img class="bg" src="https://cdn5.f-cdn.com/contestentries/212081/10921447/5549c561a45b5_thumb900.jpg" onclick="myFunction4()" width="19%" alt="HD Image 2">
    <img class="bg" src="https://photopedia.in/wp-content/uploads/2017/12/wide-angle.jpg" onclick="myFunction5()" width="19%" alt="HD Image 3">
-   <img class="bg" src="https://cdn2.f-cdn.com/contestentries/212081/15536108/554919adf290f_thumb900.jpg" onclick="myFunction7()" width="19%" height= "133px" alt="HD Image 4">
+   <img class="bg" src="https://cdn2.f-cdn.com/contestentries/212081/15536108/554919adf290f_thumb900.jpg" onclick="myFunction7()" width="16.5%" alt="HD Image 4">
    
    
   </div>
